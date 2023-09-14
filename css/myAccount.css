@@ -1,0 +1,139 @@
+/*
+1 подключить jquery
+2 подключить этот css ниже остальных
+3 Приписать кнопке класс
+*/
+
+
+
+.container {
+ position: relative;
+}
+
+.menu{
+	width: 458px;
+	height: 538px;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	transition: 0.5s;
+	transform: translateY(-100%);
+	box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.show{
+	transform: translateY(0%);
+}
+
+
+.menu__body{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color:#fff;
+	width: 458px;
+	height: 538px;
+}
+
+
+#menu__close{
+	position: absolute;
+	top: 25px;
+	right: 15px;
+	padding: 0 0 10px 10px;
+}
+
+
+.menu__profile-pic{
+	margin-top: 98px;
+}
+
+.menu__nickname{
+	margin-top: 6px;
+
+	display: flex;
+	align-items: bottom;
+
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.nickname__name{
+	margin-right: 8px;
+}
+
+.nickname__edit{
+	padding-top: 4px;
+}
+
+.menu__email{
+	margin-top: 6px;
+
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, 0.44);
+}
+
+.menu-info{
+	margin-top: 90px;
+	width: 398px;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	font-family: 'Gilroy Light'; 
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.menu-info__item--plus::before{
+	 content:'';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url('../img/menu/plus.svg') 0 0/ cover no-repeat;
+    top: 2px;
+    right: 0px;
+}
+
+.menu-logout{
+	position: absolute;
+	bottom: 25px;
+	right: 30px;
+}
+
+.menu-logout a{
+	position: relative;
+	font-family: 'Gilroy Light'; 
+	color: #000;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.menu-logout a::before{
+	content:'';
+   position: absolute;
+   width: 14px;
+   height: 14px;
+   background: url('../img/menu/logout 1.png') 0 0/ cover no-repeat;
+   top: 1px;
+   left: -22px;
+}
+
